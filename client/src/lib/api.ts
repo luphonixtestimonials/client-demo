@@ -1,28 +1,16 @@
 
-const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://your-app-name.vercel.app/api' 
-  : '/api';
+// Static site - no API calls needed
+// This file is kept for future API integration if needed
 
 export const apiClient = {
+  // Placeholder for future API integration
   get: async (endpoint: string) => {
-    const response = await fetch(`${API_BASE_URL}${endpoint}`);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    return response.json();
+    console.log(`Static site - GET ${endpoint} would be called here`);
+    return Promise.resolve({});
   },
   
   post: async (endpoint: string, data: any) => {
-    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    });
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    return response.json();
+    console.log(`Static site - POST ${endpoint} with data:`, data);
+    return Promise.resolve({});
   }
 };

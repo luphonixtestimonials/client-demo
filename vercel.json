@@ -1,29 +1,6 @@
 
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "client/src/**/*",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist/public"
-      }
-    },
-    {
-      "src": "server/index.ts",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "server/index.ts"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/client/src/$1"
-    }
-  ],
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/public"
+  "outputDirectory": "dist"
 }
