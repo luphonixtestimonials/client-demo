@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.1)_0%,transparent_50%),radial-gradient(circle_at_80%_80%,rgba(52,211,153,0.1)_0%,transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
       </div>
-      
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
         <div className="grid lg:grid-cols-12 md:grid-cols-6 gap-8 mb-12">
@@ -25,15 +25,15 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold font-poppins" data-testid="footer-company-name">
-                  TechForward
+                  TechForward Solutions
                 </h3>
-                <span className="text-sm text-slate-400 font-medium tracking-wider">SOLUTIONS</span>
+                <span className="text-sm text-slate-400 font-medium tracking-wider"></span>
               </div>
             </div>
             <p className="text-slate-300 font-inter mb-6 leading-relaxed max-w-md" data-testid="footer-company-description">
               Leading technology services provider empowering businesses with innovative solutions, exceptional support, and cutting-edge digital transformation strategies.
             </p>
-            
+
             {/* Enhanced Social Links */}
             <div className="flex space-x-4">
               <button
@@ -62,7 +62,7 @@ export default function Footer() {
               </button>
             </div>
           </div>
-          
+
           {/* Services */}
           <div className="lg:col-span-2 md:col-span-2">
             <h4 className="text-lg font-bold font-poppins mb-6 text-white" data-testid="footer-services-title">
@@ -91,7 +91,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
+
           {/* Company */}
           <div className="lg:col-span-2 md:col-span-2">
             <h4 className="text-lg font-bold font-poppins mb-6 text-white">Company</h4>
@@ -118,7 +118,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
+
           {/* Support */}
           <div className="lg:col-span-2 md:col-span-2">
             <h4 className="text-lg font-bold font-poppins mb-6 text-white" data-testid="footer-support-title">
@@ -147,7 +147,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
+
           {/* Contact Info */}
           <div className="lg:col-span-2 md:col-span-6">
             <h4 className="text-lg font-bold font-poppins mb-6 text-white">Contact</h4>
@@ -178,7 +178,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+
         {/* Enhanced Copyright */}
         <div className="border-t border-slate-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">

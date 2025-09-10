@@ -58,13 +58,13 @@ export default function Home() {
               Trusted by Industry Leaders
             </div>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-poppins text-white mb-6 leading-tight" data-testid="why-choose-title">
-              Numbers That
-              <span className="block bg-gradient-to-r from-blue-400 via-teal-400 to-blue-400 bg-clip-text text-transparent">
-                Define Excellence
+              What is your biggest challenge?
+              <span className="block bg-gradient-to-r from-cyan-400 via-blue-400 to-teal-400 bg-clip-text text-transparent">
+                We're Here to Help
               </span>
             </h2>
             <p className="text-xl text-white/80 max-w-4xl mx-auto font-inter leading-relaxed" data-testid="why-choose-description">
-              Our commitment to delivering exceptional results is reflected in every project, partnership, and innovation we bring to life.
+              Accelerate digital transformation. Advance automation with smarter software. Advance careers.
             </p>
           </div>
           
@@ -171,12 +171,12 @@ export default function Home() {
               </div>
               
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-poppins mb-6 leading-tight" data-testid="contact-title">
-                Transform Your Business
-                <span className="block text-blue-200">With Enterprise Technology</span>
+                What can we help you find?
+                <span className="block text-cyan-200">Shape the future together</span>
               </h2>
               
               <p className="text-xl text-blue-100 mb-10 max-w-4xl mx-auto font-inter leading-relaxed" data-testid="contact-description">
-                Join industry leaders who trust TechForward Solutions to accelerate their digital transformation journey with cutting-edge technology and exceptional support.
+                Express links, explore our resources library, explore research industry, access our publications or find information about CAI team.
               </p>
               
               {/* Enhanced CTA Buttons */}

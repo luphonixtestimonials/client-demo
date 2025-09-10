@@ -11,7 +11,10 @@ import {
   BarChart3, 
   Clipboard, 
   Settings, 
-  UserCheck 
+  UserCheck,
+  Brain, 
+  CheckCircle,
+  ArrowRight 
 } from "lucide-react";
 
 const services = [
@@ -178,80 +181,154 @@ export default function Services() {
             Enterprise Solutions Portfolio
           </div>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-poppins text-slate-900 mb-6 leading-tight" data-testid="services-title">
-            Technology Services That
+            Best practices to secure
             <span className="block bg-gradient-to-r from-blue-600 via-teal-600 to-blue-600 bg-clip-text text-transparent">
-              Drive Innovation
+              your service desk and
             </span>
+            <span className="block text-slate-900">contact center</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-4xl mx-auto font-inter leading-relaxed" data-testid="services-description">
-            From AI-powered analytics to enterprise security, we deliver cutting-edge solutions that transform businesses and accelerate growth in the digital economy.
+            TechForward powers the possible for business and industry engines. We revolutionize processes and reduce costs.
           </p>
         </div>
-        
-        {/* Professional Services Grid */}
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
-          {services.map((service, index) => {
+
+        {/* Zigzag Services Layout */}
+        <div className="space-y-16">
+          {services.slice(0, 6).map((service, index) => {
             const IconComponent = service.icon;
+            const isEven = index % 2 === 0;
             return (
               <div 
                 key={service.id} 
-                className="group relative bg-white rounded-2xl border border-slate-200 hover:border-blue-300 p-8 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-2 fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className={`flex flex-col lg:flex-row items-center gap-12 ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} fade-in`}
+                style={{ animationDelay: `${index * 200}ms` }}
                 data-testid={`service-card-${service.id}`}
               >
-                {/* Gradient border effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-teal-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute inset-0.5 bg-white rounded-2xl"></div>
-                
-                {/* Card content */}
-                <div className="relative z-10">
-                  {/* Icon with professional styling */}
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="flex items-center justify-center w-14 h-14 bg-[hsl(220,91%,15%)] rounded-xl shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                      <IconComponent className="w-7 h-7 text-white" />
-                    </div>
-                    <div className="text-right">
-                      <div className="text-xs text-slate-400 font-mono">0{service.id}</div>
+                {/* Card Content */}
+                <div className="flex-1 lg:max-w-lg">
+                  <div 
+                    className="group relative rounded-3xl border border-slate-200 p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 overflow-hidden"
+                    style={{backgroundColor: '#e6eff2'}}
+                  >
+                    {/* Enhanced hover effect with custom color */}
+                    <div 
+                      className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform scale-95 group-hover:scale-100"
+                      style={{backgroundColor: '#164070'}}
+                    ></div>
+                    <div className="absolute inset-1 rounded-3xl group-hover:bg-white/95" style={{backgroundColor: '#e6eff2'}}></div>
+
+                    {/* Card content */}
+                    <div className="relative z-10">
+                      {/* Icon with professional styling */}
+                      <div className="flex items-center justify-between mb-6">
+                        <div 
+                          className="flex items-center justify-center w-16 h-16 rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300"
+                          style={{backgroundColor: '#164070'}}
+                        >
+                          <IconComponent className="w-8 h-8 text-white" />
+                        </div>
+                        <div className="text-right">
+                          <div className="text-xs text-slate-400 font-mono">0{service.id}</div>
+                        </div>
+                      </div>
+
+                      <h3 className="text-2xl font-bold font-poppins text-slate-900 mb-4 transition-colors duration-300" data-testid={`service-title-${service.id}`} style={{color: '#164070'}}>
+                        {service.title}
+                      </h3>
+
+                      <p className="text-slate-600 font-inter mb-6 leading-relaxed transition-colors duration-300" data-testid={`service-description-${service.id}`} style={{color: '#164070'}}>
+                        {service.description}
+                      </p>
+
+                      {/* Feature list with checkmarks */}
+                      <ul className="space-y-3 mb-6" data-testid={`service-features-${service.id}`}>
+                        {service.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-start space-x-3">
+                            <div className="w-5 h-5 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0 group-hover:bg-green-300">
+                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                              </svg>
+                            </div>
+                            <span className="text-slate-600 font-inter text-sm transition-colors duration-300" style={{color: '#164070'}}>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-                  
-                  <h3 className="text-xl font-bold font-poppins text-slate-900 mb-3 group-hover:text-blue-600 transition-colors duration-300" data-testid={`service-title-${service.id}`}>
-                    {service.title}
-                  </h3>
-                  
-                  <p className="text-slate-600 font-inter mb-6 leading-relaxed" data-testid={`service-description-${service.id}`}>
-                    {service.description}
-                  </p>
-                  
-                  {/* Feature list with checkmarks */}
-                  <ul className="space-y-3" data-testid={`service-features-${service.id}`}>
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start space-x-3">
-                        <div className="w-5 h-5 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
-                          <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                          </svg>
+                </div>
+
+                {/* Service Image */}
+                <div className="flex-1 lg:max-w-lg">
+                  <div className="relative rounded-3xl overflow-hidden shadow-2xl" style={{backgroundColor: '#d1d5db'}}>
+                    <div className="w-full h-80 flex items-center justify-center relative transition-transform duration-500 hover:scale-105">
+                      {/* Professional illustration with proper icons */}
+                      <div className="text-center p-8">
+                        <div className="mb-6">
+                          {service.id === 1 && (
+                            <div className="w-24 h-24 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center">
+                              <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                              </svg>
+                            </div>
+                          )}
+                          {service.id === 2 && (
+                            <div className="w-24 h-24 mx-auto bg-green-100 rounded-2xl flex items-center justify-center">
+                              <svg className="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                              </svg>
+                            </div>
+                          )}
+                          {service.id === 3 && (
+                            <div className="w-24 h-24 mx-auto bg-purple-100 rounded-2xl flex items-center justify-center">
+                              <svg className="w-12 h-12 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                              </svg>
+                            </div>
+                          )}
+                          {service.id === 4 && (
+                            <div className="w-24 h-24 mx-auto bg-yellow-100 rounded-2xl flex items-center justify-center">
+                              <svg className="w-12 h-12 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                              </svg>
+                            </div>
+                          )}
+                          {service.id === 5 && (
+                            <div className="w-24 h-24 mx-auto bg-indigo-100 rounded-2xl flex items-center justify-center">
+                              <svg className="w-12 h-12 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                              </svg>
+                            </div>
+                          )}
+                          {service.id === 6 && (
+                            <div className="w-24 h-24 mx-auto bg-pink-100 rounded-2xl flex items-center justify-center">
+                              <svg className="w-12 h-12 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                              </svg>
+                            </div>
+                          )}
                         </div>
-                        <span className="text-slate-600 font-inter text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  {/* Learn more link */}
-                  <div className="mt-6 pt-6 border-t border-slate-100">
-                    <button className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm group-hover:translate-x-1 transition-all duration-300">
-                      Learn more
-                      <svg className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </button>
+                        <div className="text-slate-600 font-medium text-lg">
+                          {service.title} illustration
+                        </div>
+                      </div>
+
+                      {/* Gradient overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent"></div>
+                    </div>
+
+                    {/* Floating badge */}
+                    <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-sm rounded-2xl px-4 py-2 shadow-lg">
+                      <div className="text-sm font-bold" style={{color: '#164070'}}>
+                        Service #{service.id.toString().padStart(2, '0')}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             );
           })}
         </div>
-        
+
         {/* Bottom CTA section */}
         <div className="mt-20 text-center fade-in">
           <div className="bg-[hsl(220,91%,15%)] rounded-2xl p-12 text-white">
