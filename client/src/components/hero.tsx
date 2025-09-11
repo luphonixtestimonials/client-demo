@@ -46,7 +46,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden" ref={heroRef}>
       {/* Sophisticated Background */}
-      <div className="absolute inset-0 bg-[hsl(220,91%,15%)]">
+      <div className="absolute inset-0 bg-[#dfeef1]">
         {/* Animated mesh gradient overlay */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.3)_0%,transparent_50%),radial-gradient(circle_at_80%_80%,rgba(52,211,153,0.3)_0%,transparent_50%),radial-gradient(circle_at_40%_40%,rgba(139,92,246,0.3)_0%,transparent_50%)] animate-pulse"></div>
 
@@ -66,17 +66,17 @@ export default function Hero() {
           {/* Enhanced Content Section */}
           <div className="text-center lg:text-left space-y-8 fade-in">
             {/* Premium Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-[#dfeef1]/10 backdrop-blur-md rounded-full border border-[#dfeef1]/20 text-[#dfeef1]/90 text-sm font-medium">
+            <div className="inline-flex items-center px-4 py-2 bg-slate-800/10 backdrop-blur-md rounded-full border border-slate-800/20 text-slate-800/90 text-sm font-medium">
               <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
               Enterprise-Grade Technology Solutions
             </div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-poppins text-[#dfeef1] leading-[1.1] tracking-tight" data-testid="hero-title">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-poppins text-slate-900 leading-[1.1] tracking-tight" data-testid="hero-title">
               Transform Your
               <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-teal-400 bg-clip-text text-transparent animate-pulse"> Digital Future</span>
             </h1>
 
-            <p className="text-xl lg:text-2xl text-[#dfeef1]/80 leading-relaxed max-w-2xl font-inter" data-testid="hero-description">
+            <p className="text-xl lg:text-2xl text-slate-700 leading-relaxed max-w-2xl font-inter" data-testid="hero-description">
               Partner with industry leaders in AI, cybersecurity, and cloud innovation. We deliver enterprise solutions that drive measurable growth and competitive advantage.
             </p>
 
@@ -114,7 +114,7 @@ export default function Hero() {
             {/* Premium CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <button 
-                className="group relative px-8 py-4 bg-[hsl(220,91%,15%)] text-[#dfeef1] rounded-xl font-semibold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25" 
+                className="group relative px-8 py-4 bg-[hsl(220,91%,15%)] text-white rounded-xl font-semibold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25" 
                 onClick={handleGetStarted}
                 data-testid="button-get-started"
               >
@@ -122,7 +122,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-[hsl(220,91%,20%)] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
               </button>
               <button 
-                className="px-8 py-4 border-2 border-[#dfeef1]/30 text-[#dfeef1] rounded-xl font-semibold text-lg backdrop-blur-sm hover:bg-[#dfeef1]/10 hover:border-[#dfeef1]/50 transition-all duration-300 hover:scale-105"
+                className="px-8 py-4 border-2 border-slate-800/30 text-slate-800 rounded-xl font-semibold text-lg backdrop-blur-sm hover:bg-slate-800/10 hover:border-slate-800/50 transition-all duration-300 hover:scale-105"
                 onClick={handleLearnMore}
                 data-testid="button-learn-more"
               >
