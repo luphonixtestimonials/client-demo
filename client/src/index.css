@@ -6,7 +6,7 @@
 
 :root {
   /* Tech Blue Confidence Color Palette */
-  --background: #dfeef1;
+  --background: hsl(210, 40%, 96%);
   --foreground: hsl(215, 25%, 27%);
   --card: #dfeef1;
   --card-foreground: hsl(215, 25%, 27%);

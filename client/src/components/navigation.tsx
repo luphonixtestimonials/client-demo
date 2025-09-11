@@ -37,11 +37,11 @@ export default function Navigation() {
           {/* Enhanced Logo */}
           <div className="flex items-center group">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-[#164070] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-teal-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <div className="w-5 h-5 bg-[#dfeef1] rounded-sm"></div>
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-bold font-poppins text-[#164070]" data-testid="logo">
+                <span className="text-2xl font-bold font-poppins bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent" data-testid="logo">
                   TechForward
                 </span>
                 <span className="text-xs text-slate-500 font-medium tracking-wider">SOLUTIONS</span>
@@ -87,7 +87,7 @@ export default function Navigation() {
             {/* CTA Button */}
             <div className="ml-6 pl-6 border-l border-slate-200">
               <button 
-                className="px-6 py-2.5 bg-[#164070] text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300"
+                className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg font-semibold text-sm hover:shadow-lg hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300"
                 onClick={() => scrollToSection('contact')}
                 data-testid="nav-cta"
               >
@@ -127,7 +127,7 @@ export default function Navigation() {
               ))}
               <div className="pt-4 border-t border-slate-200">
                 <button 
-                  className="w-full px-4 py-3 bg-[#164070] text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
+                  className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
                   onClick={() => scrollToSection('contact')}
                   data-testid="mobile-nav-cta"
                 >

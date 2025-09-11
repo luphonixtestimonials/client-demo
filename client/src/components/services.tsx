@@ -179,7 +179,7 @@ export default function Services() {
           </div>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-poppins text-slate-900 mb-6 leading-tight" data-testid="services-title">
             Technology Services That
-            <span className="block text-[#164070]">
+            <span className="block bg-gradient-to-r from-blue-600 via-teal-600 to-blue-600 bg-clip-text text-transparent">
               Drive Innovation
             </span>
           </h2>
