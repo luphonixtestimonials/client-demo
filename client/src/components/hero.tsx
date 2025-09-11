@@ -47,15 +47,6 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden" ref={heroRef}>
       {/* Sophisticated Background */}
       <div className="absolute inset-0 bg-[#dfeef1]">
-        {/* Animated mesh gradient overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.3)_0%,transparent_50%),radial-gradient(circle_at_80%_80%,rgba(52,211,153,0.3)_0%,transparent_50%),radial-gradient(circle_at_40%_40%,rgba(139,92,246,0.3)_0%,transparent_50%)] animate-pulse"></div>
-
-        {/* Floating particles */}
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-ping opacity-75"></div>
-          <div className="absolute top-3/4 right-1/3 w-1 h-1 bg-teal-400 rounded-full animate-ping opacity-50 animation-delay-1000"></div>
-          <div className="absolute bottom-1/3 left-2/3 w-1.5 h-1.5 bg-purple-400 rounded-full animate-ping opacity-60 animation-delay-2000"></div>
-        </div>
 
         {/* Grid pattern overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(223,238,241,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(223,238,241,.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
@@ -73,7 +64,7 @@ export default function Hero() {
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold font-poppins text-slate-900 leading-[1.1] tracking-tight" data-testid="hero-title">
               Transform Your
-              <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-teal-400 bg-clip-text text-transparent animate-pulse"> Digital Future</span>
+              <span className="block text-[#164070]"> Digital Future</span>
             </h1>
 
             <p className="text-xl lg:text-2xl text-slate-700 leading-relaxed max-w-2xl font-inter" data-testid="hero-description">
@@ -82,31 +73,31 @@ export default function Hero() {
 
             {/* Enhanced Trust Indicators */}
             <div className="flex flex-wrap items-center gap-8 justify-center lg:justify-start">
-              <div className="flex items-center space-x-3 text-[#dfeef1]/70">
+              <div className="flex items-center space-x-3 text-slate-700">
                 <div className="w-8 h-8 bg-[hsl(220,91%,15%)] rounded-lg flex items-center justify-center">
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-sm"></div>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-[#dfeef1]">ISO 27001</div>
-                  <div className="text-xs">Certified Security</div>
+                  <div className="text-sm font-semibold text-slate-900">ISO 27001</div>
+                  <div className="text-xs text-slate-600">Certified Security</div>
                 </div>
               </div>
-              <div className="flex items-center space-x-3 text-[#dfeef1]/70">
+              <div className="flex items-center space-x-3 text-slate-700">
                 <div className="w-8 h-8 bg-[hsl(220,91%,15%)] rounded-lg flex items-center justify-center">
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-full"></div>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-[#dfeef1]">Fortune 100</div>
-                  <div className="text-xs">Trusted Partner</div>
+                  <div className="text-sm font-semibold text-slate-900">Fortune 100</div>
+                  <div className="text-xs text-slate-600">Trusted Partner</div>
                 </div>
               </div>
-              <div className="flex items-center space-x-3 text-[#dfeef1]/70">
+              <div className="flex items-center space-x-3 text-slate-700">
                 <div className="w-8 h-8 bg-[hsl(220,91%,15%)] rounded-lg flex items-center justify-center">
                   <div className="w-3 h-3 bg-[#dfeef1] rounded-full"></div>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-[#dfeef1]">24/7</div>
-                  <div className="text-xs">Global Support</div>
+                  <div className="text-sm font-semibold text-slate-900">24/7</div>
+                  <div className="text-xs text-slate-600">Global Support</div>
                 </div>
               </div>
             </div>
