@@ -59,7 +59,7 @@ export default function Home() {
             </div>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-poppins text-[#dfeef1] mb-6 leading-tight" data-testid="why-choose-title">
               Numbers That
-              <span className="block text-[#164070]">
+              <span className="block text-[#d7e4ea]">
                 Define Excellence
               </span>
             </h2>
