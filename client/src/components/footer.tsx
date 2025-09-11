@@ -7,11 +7,11 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-[#dfeef1] relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.1)_0%,transparent_50%),radial-gradient(circle_at_80%_80%,rgba(52,211,153,0.1)_0%,transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(223,238,241,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(223,238,241,.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="lg:col-span-4 md:col-span-6">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-teal-600 rounded-xl flex items-center justify-center">
-                <div className="w-6 h-6 bg-white rounded-sm"></div>
+                <div className="w-6 h-6 bg-[#dfeef1] rounded-sm"></div>
               </div>
               <div>
                 <h3 className="text-2xl font-bold font-poppins" data-testid="footer-company-name">
@@ -42,7 +42,7 @@ export default function Footer() {
                 data-testid="social-linkedin"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="w-5 h-5 group-hover:text-white" />
+                <Linkedin className="w-5 h-5 group-hover:text-[#dfeef1]" />
               </button>
               <button
                 onClick={() => handleSocialClick('Twitter')}
@@ -50,7 +50,7 @@ export default function Footer() {
                 data-testid="social-twitter"
                 aria-label="Twitter"
               >
-                <Twitter className="w-5 h-5 group-hover:text-white" />
+                <Twitter className="w-5 h-5 group-hover:text-[#dfeef1]" />
               </button>
               <button
                 onClick={() => handleSocialClick('GitHub')}
@@ -58,14 +58,14 @@ export default function Footer() {
                 data-testid="social-github"
                 aria-label="GitHub"
               >
-                <Github className="w-5 h-5 group-hover:text-white" />
+                <Github className="w-5 h-5 group-hover:text-[#dfeef1]" />
               </button>
             </div>
           </div>
           
           {/* Services */}
           <div className="lg:col-span-2 md:col-span-2">
-            <h4 className="text-lg font-bold font-poppins mb-6 text-white" data-testid="footer-services-title">
+            <h4 className="text-lg font-bold font-poppins mb-6 text-[#dfeef1]" data-testid="footer-services-title">
               Services
             </h4>
             <ul className="space-y-3 font-inter">
@@ -94,7 +94,7 @@ export default function Footer() {
           
           {/* Company */}
           <div className="lg:col-span-2 md:col-span-2">
-            <h4 className="text-lg font-bold font-poppins mb-6 text-white">Company</h4>
+            <h4 className="text-lg font-bold font-poppins mb-6 text-[#dfeef1]">Company</h4>
             <ul className="space-y-3 font-inter">
               <li>
                 <button className="text-slate-300 hover:text-teal-400 transition-colors duration-200 text-left">
@@ -121,7 +121,7 @@ export default function Footer() {
           
           {/* Support */}
           <div className="lg:col-span-2 md:col-span-2">
-            <h4 className="text-lg font-bold font-poppins mb-6 text-white" data-testid="footer-support-title">
+            <h4 className="text-lg font-bold font-poppins mb-6 text-[#dfeef1]" data-testid="footer-support-title">
               Support
             </h4>
             <ul className="space-y-3 font-inter">
@@ -150,11 +150,11 @@ export default function Footer() {
           
           {/* Contact Info */}
           <div className="lg:col-span-2 md:col-span-6">
-            <h4 className="text-lg font-bold font-poppins mb-6 text-white">Contact</h4>
+            <h4 className="text-lg font-bold font-poppins mb-6 text-[#dfeef1]">Contact</h4>
             <div className="space-y-4 font-inter">
               <div className="flex items-start space-x-3">
                 <div className="w-5 h-5 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-3 h-3 text-[#dfeef1]" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
@@ -166,7 +166,7 @@ export default function Footer() {
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-5 h-5 bg-teal-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-3 h-3 text-[#dfeef1]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -187,9 +187,9 @@ export default function Footer() {
                 &copy; 2024 TechForward Solutions. All rights reserved.
               </p>
               <div className="flex space-x-6 text-sm">
-                <button className="text-slate-400 hover:text-white transition-colors duration-200">Privacy Policy</button>
-                <button className="text-slate-400 hover:text-white transition-colors duration-200">Terms of Service</button>
-                <button className="text-slate-400 hover:text-white transition-colors duration-200">Cookie Policy</button>
+                <button className="text-slate-400 hover:text-[#dfeef1] transition-colors duration-200">Privacy Policy</button>
+                <button className="text-slate-400 hover:text-[#dfeef1] transition-colors duration-200">Terms of Service</button>
+                <button className="text-slate-400 hover:text-[#dfeef1] transition-colors duration-200">Cookie Policy</button>
               </div>
             </div>
             <p className="text-slate-500 font-inter text-sm mt-4 md:mt-0" data-testid="footer-tagline">

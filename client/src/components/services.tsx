@@ -169,7 +169,7 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-br from-slate-50 to-white">
+    <section id="services" className="py-24 bg-gradient-to-br from-[#dfeef1] to-[#dfeef1]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Enhanced Section Header */}
         <div className="text-center mb-20 fade-in">
@@ -195,20 +195,20 @@ export default function Services() {
             return (
               <div 
                 key={service.id} 
-                className="group relative bg-white rounded-2xl border border-slate-200 hover:border-blue-300 p-8 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-2 fade-in"
+                className="group relative bg-[#dfeef1] rounded-2xl border border-slate-200 hover:border-blue-300 p-8 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-2 fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
                 data-testid={`service-card-${service.id}`}
               >
                 {/* Gradient border effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-teal-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute inset-0.5 bg-white rounded-2xl"></div>
+                <div className="absolute inset-0.5 bg-[#dfeef1] rounded-2xl"></div>
                 
                 {/* Card content */}
                 <div className="relative z-10">
                   {/* Icon with professional styling */}
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center justify-center w-14 h-14 bg-[hsl(220,91%,15%)] rounded-xl shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                      <IconComponent className="w-7 h-7 text-white" />
+                      <IconComponent className="w-7 h-7 text-[#dfeef1]" />
                     </div>
                     <div className="text-right">
                       <div className="text-xs text-slate-400 font-mono">0{service.id}</div>
@@ -228,7 +228,7 @@ export default function Services() {
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start space-x-3">
                         <div className="w-5 h-5 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
-                          <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <svg className="w-3 h-3 text-[#dfeef1]" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
                         </div>
@@ -261,7 +261,7 @@ export default function Services() {
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
               Let's discuss how our enterprise solutions can accelerate your digital transformation journey.
             </p>
-            <button className="px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+            <button className="px-8 py-4 bg-[#dfeef1] text-blue-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
               Schedule a Consultation
             </button>
           </div>

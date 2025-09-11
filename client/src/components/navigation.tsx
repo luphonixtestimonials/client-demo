@@ -29,7 +29,7 @@ export default function Navigation() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
       isScrolled 
-        ? 'bg-white/80 backdrop-blur-xl shadow-lg shadow-slate-900/10 border-b border-slate-200/50' 
+        ? 'bg-[#dfeef1]/80 backdrop-blur-xl shadow-lg shadow-slate-900/10 border-b border-slate-200/50' 
         : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +38,7 @@ export default function Navigation() {
           <div className="flex items-center group">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-teal-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <div className="w-5 h-5 bg-white rounded-sm"></div>
+                <div className="w-5 h-5 bg-[#dfeef1] rounded-sm"></div>
               </div>
               <div className="flex flex-col">
                 <span className="text-2xl font-bold font-poppins bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent" data-testid="logo">
@@ -113,7 +113,7 @@ export default function Navigation() {
         
         {/* Enhanced Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-200/50 shadow-lg">
+          <div className="md:hidden bg-[#dfeef1]/95 backdrop-blur-xl border-t border-slate-200/50 shadow-lg">
             <div className="px-4 py-6 space-y-2">
               {['home', 'services', 'about', 'contact'].map((section) => (
                 <button 
