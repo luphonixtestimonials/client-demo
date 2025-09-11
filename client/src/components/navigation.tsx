@@ -44,7 +44,7 @@ export default function Navigation() {
                 <span className="text-2xl font-bold font-poppins bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent" data-testid="logo">
                   TechForward
                 </span>
-                <span className="text-xs text-slate-500 font-medium tracking-wider">SOLUTIONS</span>
+                <span className={`text-xs ${isScrolled ? 'text-slate-500' : 'text-[#dfeef1]/80'} font-medium tracking-wider`}>SOLUTIONS</span>
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-2">
             <button 
               onClick={() => scrollToSection('home')} 
-              className="relative px-4 py-2 text-slate-700 hover:text-blue-600 font-medium transition-all duration-300 group"
+              className={`relative px-4 py-2 ${isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-[#dfeef1] hover:text-white'} font-medium transition-all duration-300 group`}
               data-testid="nav-home"
             >
               Home
@@ -61,7 +61,7 @@ export default function Navigation() {
             </button>
             <button 
               onClick={() => scrollToSection('services')} 
-              className="relative px-4 py-2 text-slate-700 hover:text-blue-600 font-medium transition-all duration-300 group"
+              className={`relative px-4 py-2 ${isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-[#dfeef1] hover:text-white'} font-medium transition-all duration-300 group`}
               data-testid="nav-services"
             >
               Services
@@ -69,7 +69,7 @@ export default function Navigation() {
             </button>
             <button 
               onClick={() => scrollToSection('about')} 
-              className="relative px-4 py-2 text-slate-700 hover:text-blue-600 font-medium transition-all duration-300 group"
+              className={`relative px-4 py-2 ${isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-[#dfeef1] hover:text-white'} font-medium transition-all duration-300 group`}
               data-testid="nav-about"
             >
               About
@@ -77,7 +77,7 @@ export default function Navigation() {
             </button>
             <button 
               onClick={() => scrollToSection('contact')} 
-              className="relative px-4 py-2 text-slate-700 hover:text-blue-600 font-medium transition-all duration-300 group"
+              className={`relative px-4 py-2 ${isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-[#dfeef1] hover:text-white'} font-medium transition-all duration-300 group`}
               data-testid="nav-contact"
             >
               Contact
@@ -104,8 +104,8 @@ export default function Navigation() {
               data-testid="mobile-menu-button"
             >
               {isMenuOpen ? 
-                <X className="w-5 h-5 text-slate-700" /> : 
-                <Menu className="w-5 h-5 text-slate-700" />
+                <X className={`w-5 h-5 ${isScrolled ? 'text-slate-700' : 'text-[#dfeef1]'}`} /> : 
+                <Menu className={`w-5 h-5 ${isScrolled ? 'text-slate-700' : 'text-[#dfeef1]'}`} />
               }
             </button>
           </div>
