@@ -8,22 +8,22 @@
   /* Tech Blue Confidence Color Palette */
   --background: hsl(210, 40%, 96%);
   --foreground: hsl(215, 25%, 27%);
-  --card: hsl(0, 0%, 100%);
+  --card: #dfeef1;
   --card-foreground: hsl(215, 25%, 27%);
-  --popover: hsl(0, 0%, 100%);
+  --popover: #dfeef1;
   --popover-foreground: hsl(215, 25%, 27%);
   
   /* Primary: Navy Blue - for headers, hero background, footer */
   --primary: hsl(220, 91%, 15%);
-  --primary-foreground: hsl(0, 0%, 100%);
+  --primary-foreground: #dfeef1;
   
   /* Secondary: Bright Blue - for buttons, highlights */
   --secondary: hsl(213, 94%, 68%);
-  --secondary-foreground: hsl(0, 0%, 100%);
+  --secondary-foreground: #dfeef1;
   
   /* Accent: Teal/Green - for hover effects, icons */
   --accent: hsl(174, 72%, 56%);
-  --accent-foreground: hsl(0, 0%, 100%);
+  --accent-foreground: #dfeef1;
   
   /* Neutral: Light Gray + Charcoal - backgrounds, text contrast */
   --muted: hsl(210, 40%, 92%);
@@ -42,7 +42,7 @@
   --sidebar: hsl(180, 7%, 97%);
   --sidebar-foreground: hsl(215, 25%, 27%);
   --sidebar-primary: hsl(213, 94%, 68%);
-  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-primary-foreground: #dfeef1;
   --sidebar-accent: hsl(214, 32%, 91%);
   --sidebar-accent-foreground: hsl(213, 94%, 68%);
   --sidebar-border: hsl(214, 32%, 91%);
@@ -69,18 +69,18 @@
   
   /* Secondary: Bright Blue for dark mode */
   --secondary: hsl(213, 94%, 68%);
-  --secondary-foreground: hsl(0, 0%, 100%);
+  --secondary-foreground: #dfeef1;
   
   /* Accent: Teal/Green for dark mode */
   --accent: hsl(174, 72%, 56%);
-  --accent-foreground: hsl(0, 0%, 100%);
+  --accent-foreground: #dfeef1;
   
   /* Dark mode neutrals */
   --muted: hsl(220, 13%, 13%);
   --muted-foreground: hsl(215, 16%, 65%);
   
   --destructive: hsl(0, 84%, 60%);
-  --destructive-foreground: hsl(0, 0%, 100%);
+  --destructive-foreground: #dfeef1;
   --border: hsl(220, 13%, 18%);
   --input: hsl(220, 13%, 18%);
   --ring: hsl(213, 94%, 68%);
@@ -159,7 +159,7 @@
   
   .card-hover {
     border: 2px solid hsl(220, 91%, 15%);
-    background: white;
+    background: #dfeef1;
     position: relative;
     overflow: hidden;
   }
@@ -190,7 +190,7 @@
                 0 15px 30px -5px hsl(220, 91%, 15%, 0.3),
                 0 0 0 1px hsl(220, 91%, 15%, 0.2);
     border: 2px solid hsl(220, 91%, 15%);
-    background: white;
+    background: #dfeef1;
   }
   
   @keyframes card-shine {
@@ -211,7 +211,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(223, 238, 241, 0.3), transparent);
     transition: left 0.5s;
   }
   
@@ -282,7 +282,7 @@
   
   .animated-border {
     position: relative;
-    background: linear-gradient(white, white) padding-box;
+    background: linear-gradient(#dfeef1, #dfeef1) padding-box;
     border: 2px solid transparent;
   }
   
@@ -293,7 +293,7 @@
     padding: 2px;
     background: hsl(220, 91%, 15%);
     border-radius: inherit;
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#dfeef1 0 0) content-box, linear-gradient(#dfeef1 0 0);
     mask-composite: subtract;
     animation: gradient-shift 4s ease-in-out infinite;
   }
@@ -348,7 +348,7 @@
   }
   
   .professional-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(223, 238, 241, 0.95);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(66, 153, 225, 0.1);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -374,9 +374,9 @@
   
   /* Premium glassmorphism effects */
   .glass-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(223, 238, 241, 0.1);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(223, 238, 241, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   }
   

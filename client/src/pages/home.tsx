@@ -53,18 +53,18 @@ export default function Home() {
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 fade-in">
-            <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-white/90 text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 bg-[#dfeef1]/10 backdrop-blur-md rounded-full border border-[#dfeef1]/20 text-[#dfeef1]/90 text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
               Trusted by Industry Leaders
             </div>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-poppins text-white mb-6 leading-tight" data-testid="why-choose-title">
-              What is your biggest challenge?
-              <span className="block bg-gradient-to-r from-cyan-400 via-blue-400 to-teal-400 bg-clip-text text-transparent">
-                We're Here to Help
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-poppins text-[#dfeef1] mb-6 leading-tight" data-testid="why-choose-title">
+              Numbers That
+              <span className="block bg-gradient-to-r from-blue-400 via-teal-400 to-blue-400 bg-clip-text text-transparent">
+                Define Excellence
               </span>
             </h2>
-            <p className="text-xl text-white/80 max-w-4xl mx-auto font-inter leading-relaxed" data-testid="why-choose-description">
-              Accelerate digital transformation. Advance automation with smarter software. Advance careers.
+            <p className="text-xl text-[#dfeef1]/80 max-w-4xl mx-auto font-inter leading-relaxed" data-testid="why-choose-description">
+              Our commitment to delivering exceptional results is reflected in every project, partnership, and innovation we bring to life.
             </p>
           </div>
           
@@ -72,14 +72,14 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Years of Experience */}
             <div className="text-center fade-in group" data-testid="stat-experience">
-              <div className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 p-8 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="bg-[#dfeef1]/10 backdrop-blur-xl rounded-2xl border border-[#dfeef1]/20 p-8 hover:bg-[#dfeef1]/15 transition-all duration-300 hover:scale-105">
                 <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-teal-500 rounded-xl mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl font-bold text-white">15+</span>
+                  <span className="text-2xl font-bold text-[#dfeef1]">15+</span>
                 </div>
-                <h3 className="text-2xl font-bold font-poppins text-white mb-2">Years</h3>
-                <p className="text-white/70 font-inter">of industry expertise and innovation leadership</p>
+                <h3 className="text-2xl font-bold font-poppins text-[#dfeef1] mb-2">Years</h3>
+                <p className="text-[#dfeef1]/70 font-inter">of industry expertise and innovation leadership</p>
                 {/* Progress bar */}
-                <div className="w-full bg-white/20 rounded-full h-1 mt-4">
+                <div className="w-full bg-[#dfeef1]/20 rounded-full h-1 mt-4">
                   <div className="bg-gradient-to-r from-blue-400 to-teal-400 h-1 rounded-full w-[95%] animate-pulse"></div>
                 </div>
               </div>
@@ -87,12 +87,12 @@ export default function Home() {
             
             {/* Projects Delivered */}
             <div className="text-center fade-in group" data-testid="stat-projects">
-              <div className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 p-8 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="bg-[#dfeef1]/10 backdrop-blur-xl rounded-2xl border border-[#dfeef1]/20 p-8 hover:bg-[#dfeef1]/15 transition-all duration-300 hover:scale-105">
                 <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-teal-500 to-green-500 rounded-xl mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl font-bold text-white">500+</span>
+                  <span className="text-2xl font-bold text-[#dfeef1]">500+</span>
                 </div>
-                <h3 className="text-2xl font-bold font-poppins text-white mb-2">Projects</h3>
-                <p className="text-white/70 font-inter">successfully delivered across global markets</p>
+                <h3 className="text-2xl font-bold font-poppins text-[#dfeef1] mb-2">Projects</h3>
+                <p className="text-[#dfeef1]/70 font-inter">successfully delivered across global markets</p>
                 <div className="flex items-center justify-center mt-4 space-x-2">
                   <span className="text-green-400 text-sm">↗ +34% YoY</span>
                 </div>
@@ -101,12 +101,12 @@ export default function Home() {
             
             {/* Support Coverage */}
             <div className="text-center fade-in group" data-testid="stat-support">
-              <div className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 p-8 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="bg-[#dfeef1]/10 backdrop-blur-xl rounded-2xl border border-[#dfeef1]/20 p-8 hover:bg-[#dfeef1]/15 transition-all duration-300 hover:scale-105">
                 <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-xl font-bold text-white">24/7</span>
+                  <span className="text-xl font-bold text-[#dfeef1]">24/7</span>
                 </div>
-                <h3 className="text-2xl font-bold font-poppins text-white mb-2">Support</h3>
-                <p className="text-white/70 font-inter">global coverage with expert technical teams</p>
+                <h3 className="text-2xl font-bold font-poppins text-[#dfeef1] mb-2">Support</h3>
+                <p className="text-[#dfeef1]/70 font-inter">global coverage with expert technical teams</p>
                 <div className="flex justify-center mt-4">
                   <div className="flex items-center space-x-1">
                     {[...Array(5)].map((_, i) => (
@@ -119,12 +119,12 @@ export default function Home() {
             
             {/* Client Satisfaction */}
             <div className="text-center fade-in group" data-testid="stat-satisfaction">
-              <div className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 p-8 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="bg-[#dfeef1]/10 backdrop-blur-xl rounded-2xl border border-[#dfeef1]/20 p-8 hover:bg-[#dfeef1]/15 transition-all duration-300 hover:scale-105">
                 <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-pink-500 rounded-xl mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl font-bold text-white">98%</span>
+                  <span className="text-2xl font-bold text-[#dfeef1]">98%</span>
                 </div>
-                <h3 className="text-2xl font-bold font-poppins text-white mb-2">Satisfaction</h3>
-                <p className="text-white/70 font-inter">client satisfaction with 5-star service ratings</p>
+                <h3 className="text-2xl font-bold font-poppins text-[#dfeef1] mb-2">Satisfaction</h3>
+                <p className="text-[#dfeef1]/70 font-inter">client satisfaction with 5-star service ratings</p>
                 <div className="flex justify-center mt-4 space-x-1">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
@@ -139,23 +139,23 @@ export default function Home() {
           {/* Additional Trust Indicators */}
           <div className="mt-16 grid md:grid-cols-3 gap-8 fade-in">
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2">ISO 27001</div>
-              <p className="text-white/70">Certified Security Standards</p>
+              <div className="text-3xl font-bold text-[#dfeef1] mb-2">ISO 27001</div>
+              <p className="text-[#dfeef1]/70">Certified Security Standards</p>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2">Fortune 100</div>
-              <p className="text-white/70">Enterprise Client Base</p>
+              <div className="text-3xl font-bold text-[#dfeef1] mb-2">Fortune 100</div>
+              <p className="text-[#dfeef1]/70">Enterprise Client Base</p>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2">99.9%</div>
-              <p className="text-white/70">System Uptime Guarantee</p>
+              <div className="text-3xl font-bold text-[#dfeef1] mb-2">99.9%</div>
+              <p className="text-[#dfeef1]/70">System Uptime Guarantee</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Enhanced Contact CTA Section */}
-      <section id="contact" className="py-24 bg-gradient-to-br from-slate-50 to-white relative overflow-hidden">
+      <section id="contact" className="py-24 bg-gradient-to-br from-[#dfeef1] to-[#dfeef1] relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
         
@@ -165,24 +165,24 @@ export default function Home() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1)_0%,transparent_50%),radial-gradient(circle_at_80%_80%,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
             
             <div className="relative z-10 text-center fade-in">
-              <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-md rounded-full border border-white/30 text-white/90 text-sm font-medium mb-8">
+              <div className="inline-flex items-center px-4 py-2 bg-[#dfeef1]/20 backdrop-blur-md rounded-full border border-[#dfeef1]/30 text-[#dfeef1]/90 text-sm font-medium mb-8">
                 <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2 animate-pulse"></span>
                 Ready to Get Started?
               </div>
               
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-poppins mb-6 leading-tight" data-testid="contact-title">
-                What can we help you find?
-                <span className="block text-cyan-200">Shape the future together</span>
+                Transform Your Business
+                <span className="block text-blue-200">With Enterprise Technology</span>
               </h2>
               
               <p className="text-xl text-blue-100 mb-10 max-w-4xl mx-auto font-inter leading-relaxed" data-testid="contact-description">
-                Express links, explore our resources library, explore research industry, access our publications or find information about CAI team.
+                Join industry leaders who trust 6VC Consulting to accelerate their digital transformation journey with cutting-edge technology and exceptional support.
               </p>
               
               {/* Enhanced CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <button 
-                  className="group px-8 py-4 bg-white text-blue-600 rounded-xl font-bold text-lg shadow-2xl hover:shadow-white/25 transition-all duration-300 hover:scale-105 hover:-translate-y-1 min-w-[200px]" 
+                  className="group px-8 py-4 bg-[#dfeef1] text-blue-600 rounded-xl font-bold text-lg shadow-2xl hover:shadow-[#dfeef1]/25 transition-all duration-300 hover:scale-105 hover:-translate-y-1 min-w-[200px]" 
                   onClick={handleContactUs}
                   data-testid="button-contact-us"
                 >
@@ -195,7 +195,7 @@ export default function Home() {
                 </button>
                 
                 <button 
-                  className="group px-8 py-4 border-2 border-white/30 text-white rounded-xl font-semibold text-lg backdrop-blur-sm hover:bg-white/10 hover:border-white/50 transition-all duration-300 hover:scale-105 min-w-[200px]"
+                  className="group px-8 py-4 border-2 border-[#dfeef1]/30 text-[#dfeef1] rounded-xl font-semibold text-lg backdrop-blur-sm hover:bg-[#dfeef1]/10 hover:border-[#dfeef1]/50 transition-all duration-300 hover:scale-105 min-w-[200px]"
                   onClick={handleScheduleConsultation}
                   data-testid="button-schedule-consultation"
                 >
@@ -238,8 +238,8 @@ export default function Home() {
             </div>
             
             {/* Floating Elements */}
-            <div className="absolute top-6 right-6 w-24 h-24 bg-white/10 rounded-full animate-pulse"></div>
-            <div className="absolute bottom-6 left-6 w-16 h-16 bg-white/10 rounded-full animate-ping"></div>
+            <div className="absolute top-6 right-6 w-24 h-24 bg-[#dfeef1]/10 rounded-full animate-pulse"></div>
+            <div className="absolute bottom-6 left-6 w-16 h-16 bg-[#dfeef1]/10 rounded-full animate-ping"></div>
           </div>
         </div>
       </section>

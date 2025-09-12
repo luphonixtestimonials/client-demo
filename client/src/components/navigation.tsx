@@ -29,7 +29,7 @@ export default function Navigation() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
       isScrolled 
-        ? 'bg-white/80 backdrop-blur-xl shadow-lg shadow-slate-900/10 border-b border-slate-200/50' 
+        ? 'bg-[#dfeef1]/80 backdrop-blur-xl shadow-lg shadow-slate-900/10 border-b border-slate-200/50' 
         : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,23 +37,26 @@ export default function Navigation() {
           {/* Enhanced Logo */}
           <div className="flex items-center group">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-teal-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <div className="w-5 h-5 bg-white rounded-sm"></div>
-              </div>
+              <img 
+                src="/logo.png" 
+                alt="Company Logo" 
+                className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-300"
+                data-testid="logo"
+              />
               <div className="flex flex-col">
-                <span className="text-2xl font-bold font-poppins bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent" data-testid="logo">
-                  TechForward
-                </span>
-                <span className="text-xs text-slate-500 font-medium tracking-wider">SOLUTIONS</span>
+                {/* <span className="text-2xl font-bold font-poppins bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent">
+                  Logo
+                </span> */}
+                {/* <span className={`text-xs ${isScrolled ? 'text-slate-500' : 'text-[#dfeef1]/80'} font-medium tracking-wider`}>IT CONSULTING</span> */}
               </div>
             </div>
           </div>
-
+          
           {/* Professional Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-2">
             <button 
               onClick={() => scrollToSection('home')} 
-              className="relative px-4 py-2 text-slate-700 hover:text-blue-600 font-medium transition-all duration-300 group"
+              className={`relative px-4 py-2 ${isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-[#dfeef1] hover:text-white'} font-medium transition-all duration-300 group`}
               data-testid="nav-home"
             >
               Home
@@ -61,7 +64,7 @@ export default function Navigation() {
             </button>
             <button 
               onClick={() => scrollToSection('services')} 
-              className="relative px-4 py-2 text-slate-700 hover:text-blue-600 font-medium transition-all duration-300 group"
+              className={`relative px-4 py-2 ${isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-[#dfeef1] hover:text-white'} font-medium transition-all duration-300 group`}
               data-testid="nav-services"
             >
               Services
@@ -69,7 +72,7 @@ export default function Navigation() {
             </button>
             <button 
               onClick={() => scrollToSection('about')} 
-              className="relative px-4 py-2 text-slate-700 hover:text-blue-600 font-medium transition-all duration-300 group"
+              className={`relative px-4 py-2 ${isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-[#dfeef1] hover:text-white'} font-medium transition-all duration-300 group`}
               data-testid="nav-about"
             >
               About
@@ -77,13 +80,13 @@ export default function Navigation() {
             </button>
             <button 
               onClick={() => scrollToSection('contact')} 
-              className="relative px-4 py-2 text-slate-700 hover:text-blue-600 font-medium transition-all duration-300 group"
+              className={`relative px-4 py-2 ${isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-[#dfeef1] hover:text-white'} font-medium transition-all duration-300 group`}
               data-testid="nav-contact"
             >
               Contact
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-teal-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </button>
-
+            
             {/* CTA Button */}
             <div className="ml-6 pl-6 border-l border-slate-200">
               <button 
@@ -95,7 +98,7 @@ export default function Navigation() {
               </button>
             </div>
           </div>
-
+          
           {/* Enhanced Mobile menu button */}
           <div className="md:hidden">
             <button 
@@ -104,16 +107,16 @@ export default function Navigation() {
               data-testid="mobile-menu-button"
             >
               {isMenuOpen ? 
-                <X className="w-5 h-5 text-slate-700" /> : 
-                <Menu className="w-5 h-5 text-slate-700" />
+                <X className={`w-5 h-5 ${isScrolled ? 'text-slate-700' : 'text-[#dfeef1]'}`} /> : 
+                <Menu className={`w-5 h-5 ${isScrolled ? 'text-slate-700' : 'text-[#dfeef1]'}`} />
               }
             </button>
           </div>
         </div>
-
+        
         {/* Enhanced Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-200/50 shadow-lg">
+          <div className="md:hidden bg-[#dfeef1]/95 backdrop-blur-xl border-t border-slate-200/50 shadow-lg">
             <div className="px-4 py-6 space-y-2">
               {['home', 'services', 'about', 'contact'].map((section) => (
                 <button 
