@@ -187,7 +187,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
               <p className="text-slate-400 font-inter" data-testid="footer-copyright">
-                &copy; 2024 TechForward Solutions. All rights reserved.
+                &copy; 2024 6VC IT Consulting. All rights reserved.
               </p>
               <div className="flex space-x-6 text-sm">
                 <button className="text-slate-400 hover:text-[#dfeef1] transition-colors duration-200">Privacy Policy</button>

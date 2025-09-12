@@ -1,6 +1,6 @@
 # Overview
 
-TechForward Solutions is a full-stack React application showcasing a technology services company's website. The application features a modern, responsive design with sections for services, company information, and contact details. Built as a single-page application with smooth scrolling navigation, it demonstrates professional web development practices using React, TypeScript, and modern UI components.
+6VC IT Consulting is a full-stack React application showcasing a technology services company's website. The application features a modern, responsive design with sections for services, company information, and contact details. Built as a single-page application with smooth scrolling navigation, it demonstrates professional web development practices using React, TypeScript, and modern UI components.
 
 # User Preferences
 
